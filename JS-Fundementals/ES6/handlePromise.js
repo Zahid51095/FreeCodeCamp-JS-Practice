@@ -1,6 +1,6 @@
 const makeServerRequest = new Promise((resolve, reject) => {
-
-    let responseFromServer = true;
+    
+    let responseFromServer = false;
       
     if(responseFromServer) {
       resolve("We got the data");
@@ -11,4 +11,8 @@ const makeServerRequest = new Promise((resolve, reject) => {
   
   makeServerRequest.then(result => {
     console.log(result);
-  })
+  });
+  makeServerRequest.catch(error => {
+    console.log(error);
+  });
+  
