@@ -19,3 +19,11 @@ function remove(arr, bookName) {
     return newArr;
   }
 }
+
+
+const updatedBookListAdd = add(bookList, "The Catcher in the Rye");
+console.log(updatedBookListAdd);
+
+// Remove a book
+const updatedBookListRemove = remove(updatedBookListAdd, "On The Electrodynamics of Moving Bodies");
+console.log(updatedBookListRemove);
